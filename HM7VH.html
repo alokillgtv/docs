@@ -40,7 +40,18 @@ img:hover {cursor: zoom-in;}
 .close {position: absolute;top: 15px;right: 35px;color: #f1f1f1;font-size: 40px;font-weight: bold;transition: 0.3s;}
 .close:hover,.close:focus {color: #bbb;text-decoration: none;cursor: pointer;}
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){.modal-content {width: 100%;}}
+@media only screen and (max-width: 700px){
+	.modal-content {width: 100%;}
+	body {padding: 10px;max-width: 100%!important;}
+	img {width: 100%!important;height: inherit!important;}
+	h1 {font-size: 27px;}
+	.zoom-img {overflow: scroll;}
+	.zoom-img img {width: inherit!important;}
+	::-webkit-scrollbar {height: 12px;width: 12px;background: #000;}
+	::-webkit-scrollbar-thumb {background: #20b7a2;-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);}
+	::-webkit-scrollbar-corner {background: #000;}
+	.zoom-img img.zoom-out {width: 100%!important;}
+}
 </style>
 </head>
 
@@ -50,7 +61,7 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p style="text-align:center"><span style="font-size:26pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh3.googleusercontent.com/j3cKbMT1rLxSYM9GCjzbDM2ReOqCcdQjtn_npLGjLB9Co5m1ZjLd4u6kaJRqyMuKFqc3zS80LaCMy5wOagKRVc3jULIFb_xJmXkcktThUF4eTVIh76A6iPUyQuaNrOouEp0El_lv" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:26pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh3.googleusercontent.com/j3cKbMT1rLxSYM9GCjzbDM2ReOqCcdQjtn_npLGjLB9Co5m1ZjLd4u6kaJRqyMuKFqc3zS80LaCMy5wOagKRVc3jULIFb_xJmXkcktThUF4eTVIh76A6iPUyQuaNrOouEp0El_lv" style="height:339px; width:602px" /></span></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -107,27 +118,27 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh4.googleusercontent.com/XzSbIoPPMAimcXSJs1OpjKnIM_o7e3A-lT-BY5x3uhjeG33UqC8zW-Nia6cxUbUVWfDK-gT4-9C3JQhbvegQBu6uXaB6d_tBWSxyY4D8vw6cNX1DZHhxrw6W_1bvJIpye1ZYOYga" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh4.googleusercontent.com/XzSbIoPPMAimcXSJs1OpjKnIM_o7e3A-lT-BY5x3uhjeG33UqC8zW-Nia6cxUbUVWfDK-gT4-9C3JQhbvegQBu6uXaB6d_tBWSxyY4D8vw6cNX1DZHhxrw6W_1bvJIpye1ZYOYga" style="height:339px; width:602px" /></span></span></span></p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh6.googleusercontent.com/rATD3iSVaVkaN5YWoxz2jINRQf3SGTlVjR63G0uFIA5qH5YBcHo6tsliVntj15k78GXrGM8J5zdXrxjVj8j9A5ejhVO_sRfTsPedKvUtknw6wXgxyg9_HEGYouYJB03VAhDj6fUW" style="height:339px; width:602px" /></span></span></span><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh4.googleusercontent.com/HHP3ztZbKI7qCly_kNn_ihvfI0PzHkaZPbVtthI9nCYNzn9uNQllgYz5ypvC8VID9-4aeH4BZcfYV13Qumi8_taymqxbhdfTScPqxy5XZku2FzpMkmjaBCprIERRZbJ54hDK2Glc" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh6.googleusercontent.com/rATD3iSVaVkaN5YWoxz2jINRQf3SGTlVjR63G0uFIA5qH5YBcHo6tsliVntj15k78GXrGM8J5zdXrxjVj8j9A5ejhVO_sRfTsPedKvUtknw6wXgxyg9_HEGYouYJB03VAhDj6fUW" style="height:339px; width:602px" /></span></span></span><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh4.googleusercontent.com/HHP3ztZbKI7qCly_kNn_ihvfI0PzHkaZPbVtthI9nCYNzn9uNQllgYz5ypvC8VID9-4aeH4BZcfYV13Qumi8_taymqxbhdfTScPqxy5XZku2FzpMkmjaBCprIERRZbJ54hDK2Glc" style="height:339px; width:602px" /></span></span></span></p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh3.googleusercontent.com/ttjJORkKAN_kI1KAtpA9jG5Af8DCdVKne8Kd_JuaxnUsdFih7t85Hhb9HyVZEZKWUXbuf4coDG_XRTbrJ9T5JMZwOhGDgfCgH6zpsfXpg6Zr5JrEGxzDeWUWo1UoOAJMLsEGf9N3" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh3.googleusercontent.com/ttjJORkKAN_kI1KAtpA9jG5Af8DCdVKne8Kd_JuaxnUsdFih7t85Hhb9HyVZEZKWUXbuf4coDG_XRTbrJ9T5JMZwOhGDgfCgH6zpsfXpg6Zr5JrEGxzDeWUWo1UoOAJMLsEGf9N3" style="height:339px; width:602px" /></span></span></span></p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh3.googleusercontent.com/sUGBC2UUrsK4ce0cHvv_AKgjvHWFXN-iwAAJ2RALScfmbVtcHzkg5IP23vJq3lpksHM1T-i7591iOVkVuBBgfX19vDowp5S6sf_EzRfn2S4ceCa3eEPtKb0JHyculQmGFjeObA6F" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh3.googleusercontent.com/sUGBC2UUrsK4ce0cHvv_AKgjvHWFXN-iwAAJ2RALScfmbVtcHzkg5IP23vJq3lpksHM1T-i7591iOVkVuBBgfX19vDowp5S6sf_EzRfn2S4ceCa3eEPtKb0JHyculQmGFjeObA6F" style="height:339px; width:602px" /></span></span></span></p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh6.googleusercontent.com/Ze8o7_Au_FhBLqWsWbTkytVRpPby5IdgX1Jrw03CtFjY9syQM93LyiLE5NkvjVIsg9yA6LREtQFvjghIT8GbEgYDCOB51GVDfGb2-6nGiDADwbCMddZP5IiTvG3hS_MF2QrFQQAU" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh6.googleusercontent.com/Ze8o7_Au_FhBLqWsWbTkytVRpPby5IdgX1Jrw03CtFjY9syQM93LyiLE5NkvjVIsg9yA6LREtQFvjghIT8GbEgYDCOB51GVDfGb2-6nGiDADwbCMddZP5IiTvG3hS_MF2QrFQQAU" style="height:339px; width:602px" /></span></span></span></p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh6.googleusercontent.com/UJhxIn2b6SHX8j6_FWKgCD0J1sglK_KYsTotpMFbnFnaqhTxyYo5DM-Zy3UlMyEzytIjypOsZsbROxk35ugb5-F90MjsMdOrEpeeF9Rpwk10-C1mSeCCghw5kY6BDHTChxqlOGDQ" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh6.googleusercontent.com/UJhxIn2b6SHX8j6_FWKgCD0J1sglK_KYsTotpMFbnFnaqhTxyYo5DM-Zy3UlMyEzytIjypOsZsbROxk35ugb5-F90MjsMdOrEpeeF9Rpwk10-C1mSeCCghw5kY6BDHTChxqlOGDQ" style="height:339px; width:602px" /></span></span></span></p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh5.googleusercontent.com/peT3fx4fM5FSV4V7Z9bLcd8EGqtZbckYHPSDMQ0-zr3g2I4m5IMt63XO_Iwql4riHUU4QbEN58EszIQmg4N2ydBJmWgRttPD3DTnDZmMQFC46Woc9r63vuEaTS9a_Z8MkZ50hPlf" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh5.googleusercontent.com/peT3fx4fM5FSV4V7Z9bLcd8EGqtZbckYHPSDMQ0-zr3g2I4m5IMt63XO_Iwql4riHUU4QbEN58EszIQmg4N2ydBJmWgRttPD3DTnDZmMQFC46Woc9r63vuEaTS9a_Z8MkZ50hPlf" style="height:339px; width:602px" /></span></span></span></p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh3.googleusercontent.com/3eiGwkv3jv6WXYfYG1PZn951FMJBmhHTr4_jAaBXG2bSKkJpEV5R2WuUR8YiMY-fSOKrWzbrSks704U1HQswMbrr7zorO8tA337BDfap_OmjHQ-4N8JLjR7i6I04jpV9VbL122Y4" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh3.googleusercontent.com/3eiGwkv3jv6WXYfYG1PZn951FMJBmhHTr4_jAaBXG2bSKkJpEV5R2WuUR8YiMY-fSOKrWzbrSks704U1HQswMbrr7zorO8tA337BDfap_OmjHQ-4N8JLjR7i6I04jpV9VbL122Y4" style="height:339px; width:602px" /></span></span></span></p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh5.googleusercontent.com/PLBMk9jKVeP7V1X02uhjtskXlmskGJ4Y-YaX_WOZM8vKxLWmGmQjzuE5pe8K4JfEdfR-j6iyRCPNJEAtLcWbDyphcGveqageQ9nAo4-YX6sRpr5tQquIA8r5hjue2B9sqgI8G2Jr" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh5.googleusercontent.com/PLBMk9jKVeP7V1X02uhjtskXlmskGJ4Y-YaX_WOZM8vKxLWmGmQjzuE5pe8K4JfEdfR-j6iyRCPNJEAtLcWbDyphcGveqageQ9nAo4-YX6sRpr5tQquIA8r5hjue2B9sqgI8G2Jr" style="height:339px; width:602px" /></span></span></span></p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh3.googleusercontent.com/MdSbo7djyaYhRD9YS5lj-D-uilns_hWmg51xNo3EJs893uPsGDlGDvGdaaDJHek3gp8lPhBIRBnYVtNOECBxNZ9aRLWMrj1xOjTAYasKQGqc-vJyLKvZcZAG56HExm7QxVfPlsCC" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh3.googleusercontent.com/MdSbo7djyaYhRD9YS5lj-D-uilns_hWmg51xNo3EJs893uPsGDlGDvGdaaDJHek3gp8lPhBIRBnYVtNOECBxNZ9aRLWMrj1xOjTAYasKQGqc-vJyLKvZcZAG56HExm7QxVfPlsCC" style="height:339px; width:602px" /></span></span></span></p>
 
-<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh5.googleusercontent.com/SyT7aCyVUv-3d2g_mGXsQkW-uR9USejlhjHBDGchJU0z3AZe1kLYJS5o8ky9N2bXIpN-beRENWWGGxf4TjQm1v9c6AXhwB1vS7pD3iphC_lsMBBMRBlKAw83LUzenCzy9y8fMG_k" style="height:339px; width:602px" /></span></span></span></p>
+<p style="text-align:center"><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh5.googleusercontent.com/SyT7aCyVUv-3d2g_mGXsQkW-uR9USejlhjHBDGchJU0z3AZe1kLYJS5o8ky9N2bXIpN-beRENWWGGxf4TjQm1v9c6AXhwB1vS7pD3iphC_lsMBBMRBlKAw83LUzenCzy9y8fMG_k" style="height:339px; width:602px" /></span></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -167,7 +178,7 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh3.googleusercontent.com/Fh9vyzqVtKiyCxfVH9ldDQgugyHd4NwAuhgC_imWkPmis26v4ZUuljQQ0I-nRCasohMyobZRlnwP-YVjJ94j568Ayt5Z--sOIbJS4_GW5W7-JHB4tqXJIu7vVyq-WEprTm9PuVFB" style="height:469px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh3.googleusercontent.com/Fh9vyzqVtKiyCxfVH9ldDQgugyHd4NwAuhgC_imWkPmis26v4ZUuljQQ0I-nRCasohMyobZRlnwP-YVjJ94j568Ayt5Z--sOIbJS4_GW5W7-JHB4tqXJIu7vVyq-WEprTm9PuVFB" style="height:469px; width:602px" /></span></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -196,7 +207,7 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh5.googleusercontent.com/eIkGH4KtlV6Ww9iosNfgTZ_Ky8ab0a3mM_XTtdmFb_gYz6dSj2JOQXZRdxLCNcKllPl0oCeWiVswF70dPVjPq8vsYXaCt-vCwwDkUShSZo-hsGtJh2iizDttC360OdE36i0mC-5d" style="height:339px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh5.googleusercontent.com/eIkGH4KtlV6Ww9iosNfgTZ_Ky8ab0a3mM_XTtdmFb_gYz6dSj2JOQXZRdxLCNcKllPl0oCeWiVswF70dPVjPq8vsYXaCt-vCwwDkUShSZo-hsGtJh2iizDttC360OdE36i0mC-5d" style="height:339px; width:602px" /></span></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -211,7 +222,7 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh4.googleusercontent.com/22GX1UnatiXyyOxmusKaaTU-ri5PYC8zBZw3X4qek66sb03q_FCeeHwRgxRf-xxy1FsTTiTC3Av3e6GiuV5wOU_mSOh_XrlNdHV-tn1Ho_1m3z-RDoKT-KWjMDtYKE0zliUehGsI" style="height:339px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh4.googleusercontent.com/22GX1UnatiXyyOxmusKaaTU-ri5PYC8zBZw3X4qek66sb03q_FCeeHwRgxRf-xxy1FsTTiTC3Av3e6GiuV5wOU_mSOh_XrlNdHV-tn1Ho_1m3z-RDoKT-KWjMDtYKE0zliUehGsI" style="height:339px; width:602px" /></span></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -233,7 +244,7 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh3.googleusercontent.com/OGiIJ-mznscbuSKeoT70yGNGsHjeqCdHK9eaALg0KKfwIrC7sc3wb5fUycsPVolk8Z85XGVauZK6Jsa6TAK_kkNJtS0h4bBnMaSlKgHc3hlSe0P1Z2nOD8NEF8ResdC8WampMke8" style="height:339px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh3.googleusercontent.com/OGiIJ-mznscbuSKeoT70yGNGsHjeqCdHK9eaALg0KKfwIrC7sc3wb5fUycsPVolk8Z85XGVauZK6Jsa6TAK_kkNJtS0h4bBnMaSlKgHc3hlSe0P1Z2nOD8NEF8ResdC8WampMke8" style="height:339px; width:602px" /></span></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -247,7 +258,7 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh4.googleusercontent.com/Csd-jyuUE1N1q0e4Ami1pJj3nz532OmOJNQ8_-MtVGEJYu-cVyLs4AeeplRnJSt39m3L88lTwsk0MYDj5hLKIl5sypy1Ik_dcXSwzvHJsRIZ1jTMoShYcmt5QliodM9qqSVwWNxZ" style="height:339px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh4.googleusercontent.com/Csd-jyuUE1N1q0e4Ami1pJj3nz532OmOJNQ8_-MtVGEJYu-cVyLs4AeeplRnJSt39m3L88lTwsk0MYDj5hLKIl5sypy1Ik_dcXSwzvHJsRIZ1jTMoShYcmt5QliodM9qqSVwWNxZ" style="height:339px; width:602px" /></span></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -255,7 +266,7 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh5.googleusercontent.com/UXX9F11h-rL9d2EpOO_HSTB_sFGa980EnnPRJ6eFCPbDn3-4-gTMvv7EQYWxeev3nL7Ww66tNxPw0KZTQYwg1iA5GrnDqFNXZEijsAicEEqXb92ej6DuvoY1AR4yJ8Vq195EzD36" style="height:339px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh5.googleusercontent.com/UXX9F11h-rL9d2EpOO_HSTB_sFGa980EnnPRJ6eFCPbDn3-4-gTMvv7EQYWxeev3nL7Ww66tNxPw0KZTQYwg1iA5GrnDqFNXZEijsAicEEqXb92ej6DuvoY1AR4yJ8Vq195EzD36" style="height:339px; width:602px" /></span></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -263,7 +274,7 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh3.googleusercontent.com/l3UHjvbJVwoMcQFXUkdFMUxyTi_q3xrxH_W-TNGiARYFSmvUtyvX5De8TReSGfm0fquQrXwWFjXMqSjAADKs3jYXjDouVbdzVaeQOGfUoBPd4Y1UxI44I5xKwfg9_EebdNJJOAwi" style="height:339px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh3.googleusercontent.com/l3UHjvbJVwoMcQFXUkdFMUxyTi_q3xrxH_W-TNGiARYFSmvUtyvX5De8TReSGfm0fquQrXwWFjXMqSjAADKs3jYXjDouVbdzVaeQOGfUoBPd4Y1UxI44I5xKwfg9_EebdNJJOAwi" style="height:339px; width:602px" /></span></span></span></p>
 
 <p><br />
 <br />
@@ -277,7 +288,7 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh5.googleusercontent.com/VXQ6maOuTIJdH0j6lsdO09HDlORxAlYIDzoNTkhpbFWYwYcovtbrz5sHFaE6rTC_yvtHBvlMbKk1rP82V_YqU0xL-ZytwtpZ2q4EZ1rCetfqDzX80LwJA-AdhlYFxdK1m5XkynHS" style="height:339px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh5.googleusercontent.com/VXQ6maOuTIJdH0j6lsdO09HDlORxAlYIDzoNTkhpbFWYwYcovtbrz5sHFaE6rTC_yvtHBvlMbKk1rP82V_YqU0xL-ZytwtpZ2q4EZ1rCetfqDzX80LwJA-AdhlYFxdK1m5XkynHS" style="height:339px; width:602px" /></span></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -285,13 +296,13 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh6.googleusercontent.com/uFBsr4WbNEXQrW7BCVueI0XGFBN1jWRuHZCuqUJWWwB4wDIdubkg-IzIfrDs_kWz43ndVqYMVrHRJhw8v3YjE6mt5MkP_F5DzbUIXKekXBg7nOKq10d5alSYm6b2ekQWExm6P9oC" style="height:373px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh6.googleusercontent.com/uFBsr4WbNEXQrW7BCVueI0XGFBN1jWRuHZCuqUJWWwB4wDIdubkg-IzIfrDs_kWz43ndVqYMVrHRJhw8v3YjE6mt5MkP_F5DzbUIXKekXBg7nOKq10d5alSYm6b2ekQWExm6P9oC" style="height:373px; width:602px" /></span></span></span></p>
 
 <p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000">Sau đ&oacute; c&aacute;c bạn giải n&eacute;n tập tin n&eacute;n </span></span></span><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><strong>All File Split.zip</strong></span></span></span><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"> đ&atilde; tải về, giải n&eacute;n bằng </span></span></span><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><strong>Extract Here</strong></span></span></span><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"> nh&eacute;.</span></span></span></p>
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh4.googleusercontent.com/BXI_0W7Od6V9brxqpNn8SByfDM3xBRr_6TbCGjD0Yhz551NYa2C2F5HM13z8fuMKd9xaTd5lFWgmO0666iN31kc-Ol4b0qNvigWxY5n-1g4HxO6En4JFwRGPcogJgtt6UyJM8A8g" style="height:419px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh4.googleusercontent.com/BXI_0W7Od6V9brxqpNn8SByfDM3xBRr_6TbCGjD0Yhz551NYa2C2F5HM13z8fuMKd9xaTd5lFWgmO0666iN31kc-Ol4b0qNvigWxY5n-1g4HxO6En4JFwRGPcogJgtt6UyJM8A8g" style="height:419px; width:602px" /></span></span></span></p>
 
 <p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000">Sau khi giải n&eacute;n sẽ xuất hiện 3 thư mục dữ liệu text gồm:</span></span></span></p>
 
@@ -307,7 +318,7 @@ img:hover {cursor: zoom-in;}
 
 <p>&nbsp;</p>
 
-<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img src="https://lh6.googleusercontent.com/Ebkyms8woQIDd7Zrdh8eGGAyxDb9Aogq9Jx_Fno81z2dc449qKp-g9xfIP58Ahhs7-aYrzspJvM_Z_A3dd_m-XKV_ECr2fOqvep3moSSR0CvhNiGeSNHM5uVU1_X8ByV_4VvSn4_" style="height:358px; width:602px" /></span></span></span></p>
+<p><span style="font-size:13.999999999999998pt"><span style="font-family:Verdana"><span style="color:#000000"><img class="zoom-none" src="https://lh6.googleusercontent.com/Ebkyms8woQIDd7Zrdh8eGGAyxDb9Aogq9Jx_Fno81z2dc449qKp-g9xfIP58Ahhs7-aYrzspJvM_Z_A3dd_m-XKV_ECr2fOqvep3moSSR0CvhNiGeSNHM5uVU1_X8ByV_4VvSn4_" style="height:358px; width:602px" /></span></span></span></p>
 
 <p>&nbsp;</p>
 
@@ -353,8 +364,29 @@ $("img").click(function(){
 	var modal = $('#myModal');
 	var $imgOut = $('#img01');
 	var $imgIn = $(this).attr("src");
-	modal.show();
-	$imgOut.attr("src",$imgIn);
+	if($(window).width() > 700){
+		modal.show();
+		$imgOut.attr("src",$imgIn);
+	}
+	else{
+		var $mclass = $(this).attr("class");
+		if($mclass == "zoom-none"){
+			$(this).wrap('<div class="zoom-img"></div>');
+			$(this).removeClass("zoom-none");
+			$(this).addClass("zoom-in");
+		}
+		if($mclass == "zoom-in"){
+			$(this).closest("zoom-img").addClass("none");
+			$(this).removeClass("zoom-in");
+			$(this).addClass("zoom-out");
+		}
+		if($mclass == "zoom-out"){
+			$(this).closest("zoom-img").removeClass("none");
+			$(this).addClass("zoom-in");
+			$(this).removeClass("zoom-out");
+		}
+	}
+	
 })
 
 $('.close').click(function(){
